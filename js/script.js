@@ -22,4 +22,4 @@ if (isNaN(distance) || isNaN(userAgeNum) || distance <= 0 || userAgeNum <= 0) {
 
 
 //OUTPUT
-console.log(parseFloat(finalPrice.toFixed(2)));
+console.log("Prezzo del biglietto: " + parseFloat(finalPrice.toFixed(2)) + "€");
