@@ -6,6 +6,9 @@ let kmPrice = 0.21;
 //ESECUZIONE LOGICA
 let basePrice = travelDistance * kmPrice;
 let finalPrice;
+if (isNaN(travelDistance) || isNaN(userAge)) {
+    console.log("Errore: Assicurati di inserire numeri! Ricarica la pagina!");
+}
 
 if (userAge >= 65) {
     finalPrice = (basePrice / 100) * 60;
