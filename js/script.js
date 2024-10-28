@@ -19,5 +19,7 @@ if (isNaN(distance) || isNaN(userAgeNum) || distance <= 0 || userAgeNum <= 0) {
     finalPrice = basePrice;
 }
 
+
+
 //OUTPUT
-console.log(finalPrice.toFixed(2));
+console.log(parseFloat(finalPrice.toFixed(2)));
