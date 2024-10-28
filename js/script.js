@@ -4,19 +4,20 @@ let userAge = prompt("Inserisci la tua età");
 let kmPrice = 0.21;
 
 //ESECUZIONE LOGICA
-let basePrice = travelDistance * kmPrice;
+let userAgeNum = parseInt(userAge);
+let distance = parseInt(travelDistance);
+let basePrice = distance * kmPrice;
 let finalPrice;
-if (isNaN(travelDistance) || isNaN(userAge)) {
-    console.log("Errore: Assicurati di inserire numeri! Ricarica la pagina!");
-}
 
-if (userAge >= 65) {
+if (isNaN(distance) || isNaN(userAgeNum) || distance <= 0 || userAgeNum <= 0) {
+    console.log("Errore: Assicurati di inserire numeri positivi! Ricarica la pagina!");
+} else if (userAgeNum >= 65) {
     finalPrice = (basePrice / 100) * 60;
-} else if (userAge < 18) {
+} else if (userAgeNum < 18) {
     finalPrice = (basePrice / 100) * 80;
 } else {
     finalPrice = basePrice;
 }
 
 //OUTPUT
-console.log(finalPrice.toFixed(2))
+console.log(finalPrice.toFixed(2));
