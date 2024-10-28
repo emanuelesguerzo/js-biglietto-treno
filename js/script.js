@@ -19,7 +19,5 @@ if (isNaN(distance) || isNaN(userAgeNum) || distance <= 0 || userAgeNum <= 0) {
     finalPrice = basePrice;
 }
 
-
-
 //OUTPUT
-console.log(parseFloat(finalPrice.toFixed(2)));
+console.log(`Prezzo del biglietto: ${finalPrice.toFixed(2)}€`);
