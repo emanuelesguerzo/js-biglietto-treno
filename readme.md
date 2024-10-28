@@ -16,12 +16,13 @@ Applicare dei controlli sull'input dell'utente
 - Prezzo per chilometro
 
 ## Esecuzione logica
-1. Calcolo del prezzo di base
-2. Calcolo eta'
+1. Conversione stringhe in numeri
+2. Calcolo del prezzo di base
+3. Controllo input utente
+4. Calcolo eta'
     - Se eta' e' maggiore o pari a 65 anni: applica sconto 40%
     - Altrimenti se eta' e minore a 18 anni: applica sconto 20%
     - Altrimenti non applicare nulla
-3. Calcolo prezzo finale: sottraendo lo sconto dal prezzo base
 
 ## Output
 Stampa in console il prezzo finale
